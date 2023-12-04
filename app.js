@@ -7,7 +7,7 @@ tg.MainButton.color = "#FF00FF";
 
 let btn = document.getElementById("btn");
 
-const { first_name, last_name, username } = window.Telegram.WebApp.initDataUnsafe.user;
+let {username} = tg.initDataUnsafe.user;
 
 document.getElementById("user_name").innerHTML = username;
 
