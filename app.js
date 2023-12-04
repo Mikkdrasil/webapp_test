@@ -7,9 +7,9 @@ tg.MainButton.color = "#FF00FF";
 
 let btn = document.getElementById("btn");
 
-let {username} = tg.initDataUnsafe.user;
+let {username, id} = tg.initDataUnsafe.user;
 
-document.getElementById("user_name").innerHTML = username;
+document.getElementById("user_name").innerHTML = id;
 
 btn.addEventListener("click", function(){
     tg.MainButton.setText("Сообщение отправлено!");
